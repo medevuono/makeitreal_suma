@@ -2,7 +2,8 @@ require "sinatra"
 
 @@count = 0
 
-get '/' do  
+get '/' do
+  @count = @@count  
   erb :index
 end
 
